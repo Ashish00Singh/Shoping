@@ -63,13 +63,13 @@ const Home = () => {
 
 
    <div className='container-fluid' style={{color:'rgb(28,36,245)'}}>
-<h1 className='animate__animated animate__bounce prodtit'>Man Fashion</h1>
+<h1 className=' prodtit'>Man Fashion</h1>
 
-<div className="CardDisplay animate__animated animate__fadeInUp animate__delay-1s">
+<div className="CardDisplay ">
       
       { man.slice(0,5).map((p)=>{
         return(
-          <Link  key={p.id} style={{textDecoration: 'none', color: 'black'}}>
+          <Link to='/man'  key={p.id} style={{textDecoration: 'none', color: 'black'}}>
           <Card 
           key={p.id}
           img={p.image}
@@ -84,7 +84,7 @@ const Home = () => {
     </div>
     <h1 className='prodtit'>Woman Fashion</h1>
 
-    <div className="CardDisplay animate__animated animate__fadeInUp animate__delay-2s">
+    <div className="CardDisplay a">
     
       { Girl.slice(0,5).map((p)=>{
         return(
@@ -103,7 +103,7 @@ const Home = () => {
     </div>
     <h1 className='prodtit'>Kids Wears</h1>
 
-    <div className="CardDisplay animate__animated animate__fadeInUp">
+    <div className="CardDisplay ">
     
       { Kid.slice(0,5).map((p)=>{
         return(
@@ -122,7 +122,7 @@ const Home = () => {
     </div>
     <h1 className='prodtit'>Select Your Gadget</h1>
 
-    <div className="CardDisplay animate__animated animate__fadeInUp">
+    <div className="CardDisplay">
     
       { electronic.slice(0,5).map((p)=>{
         return(
